@@ -7,22 +7,22 @@
 # No arguments are passed; downcase has one clear job which is to lowercase all letters that exist in the String
 # The return value is "hello world"
 "Hello World".downcase
-
+# Line 9 calls the .downcase String method on the string "Hello World", and returns "hello world" all lower case string
 
 "Hello World".include?("Hello")
-
+# Line 12 uses the .include? method to check if the string "Hello World" contains the pattern "Hello", then returns a boolean(true in this case)
 
 "Hello World".end_with?("Hello")
-
+# Line 16 uses the .end_with String method to check if the string "Hello World" ends with the pattern "Hello", then returns a boolean(false in this case)
 
 "Hello World".end_with?("rld")
-
+# line 18 uses the same method as line 15, but checks if the string ends with the pattern "rld", then returns a boolean(true in this case)
 
 12.even?
-
+# Line 21 calls the .even? Integer method, which checks if the number is even, and returns a boolean of true if the number is even or false if odd
 
 18.next
-
+Line 24 callse the .next method which will return the next number in sequence(19 in this case)
 
 
 # SECTION 2: Calling methods on variables assigned to strings.
