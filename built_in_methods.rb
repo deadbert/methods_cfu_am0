@@ -22,7 +22,7 @@
 # Line 21 calls the .even? Integer method, which checks if the number is even, and returns a boolean of true if the number is even or false if odd
 
 18.next
-Line 24 callse the .next method which will return the next number in sequence(19 in this case)
+# Line 24 callse the .next method which will return the next number in sequence(19 in this case)
 
 
 # SECTION 2: Calling methods on variables assigned to strings.
@@ -39,6 +39,12 @@ Line 24 callse the .next method which will return the next number in sequence(19
 first_name = "Jeff"
 puts first_name.start_with?("J")
 
+my_name = "Nick Spencer"
+daughter_name = "Lilly"
+# Line 45 will slice the string my_name from index 0 to index 4, and then store that returned string in a new varible called slice_name
+slice_name = my_name.slice(0, 4)
+# Line 47 will globally substitute any "L" with "S" returning the string "Silly" in this case
+daughter_name.gsub("L", "S")
 
 
 # SECTION 3: Calling methods on variables assigned to integers.
