@@ -51,8 +51,8 @@ end
 
 two_square = square(2)
 puts "the square of 2 is #{two_square}"
-4_square = square(4)
-puts "the square of 4 is #{4_square}"
+four_square = square(4)
+puts "the square of 4 is #{four_square}"
 # What is the return value of your method?
 # my method returns a integer which is the square of the provided agrument
 # How many arguments did you pass your method?
@@ -62,6 +62,15 @@ puts "the square of 4 is #{4_square}"
 
 # 5: Write a method named check_stock that satisfies the following interaction pattern:
 # Hint: You will only write one check_stock method that checks the quantity and then prints the corresponding statement.
+def check_stock(num, item)
+    if num == 0
+        puts "#{item} - OUT of stock!"
+    elsif num <= 3
+        puts "#{item} - running LOW"
+    elsif num >= 4
+        puts "#{item} is stocked"
+    end
+end
 
 check_stock(4, "Coffee");
 # => "Coffee is stocked"
