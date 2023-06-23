@@ -52,11 +52,22 @@ daughter_name.gsub("L", "S")
 # Call a different built-in Ruby method on each of your variables. 
 # https://ruby-doc.org/core-3.1.0/Integer.html
 # Include comments above each method call explaining the impact and return value of that method.
-
-
+my_age = 34
+my_weight = 168
+# line 58 will convert the int stored in my_age to a string and save it in the variable string_age
+string_age = my_age.to_f
+# line 59 will check if the int in variable my_weight is even or odd, and return a boolean saved in the weight_check variable
+weight_check = my_weight.odd?
 
 # SECTION 4: Calling methods on variables assigned to arrays.
 # Declare 2 variables assigned to arrays.
 # Call a different built-in Ruby method on each of your variables. 
 # https://ruby-doc.org/core-3.1.0/Array.html
 # Include comments above each method call explaining the impact and return value of that method.
+
+fam = ["Nick", "Lily", "Kari"]
+ages = [34, 4, 31]
+# line 71 will use the .pop method, this removes the last element of the array and gives a return value equal to the last element that was removed
+new_fam = fam.pop
+# line 73 will sum all of the values stored in ages, and return that value
+old_people = ages.sum
